@@ -1018,7 +1018,6 @@ const COURSES = {
           { scenario: "A self-checkout machine at a grocery store has a screen that says 'Place item in bagging area' after every scan. If you don't place it fast enough, it locks up and displays 'Unexpected item in bagging area \u2014 wait for assistance.' A line of frustrated customers forms behind you while you wait for an employee.", question: "Analyze this as an HCI failure. What interface design principles are violated, and how would you redesign the interaction?", answer: "The system demands specific behavior without explaining why, creating an interface gap. It punishes normal human variation in timing (cognitive load is already high when bagging). The error message is cryptic ('unexpected item' when you haven't done anything unexpected) \u2014 violating clarity. The lockout removes control entirely, violating recoverability. Redesign: increase the timing tolerance (design for human variation, not robotic precision), show a clear progress indicator ('Scan next item or tap Done'), make the weight-check passive rather than blocking, provide a simple 'Skip' button for the weight check that flags for later review rather than locking the entire system. The interface should work with cognitive limits, not against them.", concepts: ["interface gap", "recoverability", "control", "cognitive load", "designing for human variation"] },
         ],
       },
-
       {
         id: "w2", label: "Week 2", subtitle: "Cognitive Alignment & Conditioning", color: "#f59e0b",
         flashcards: [
